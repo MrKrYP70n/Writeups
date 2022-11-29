@@ -81,7 +81,7 @@ The pdfkit is vulnerable to `CVE-2022-25765`
 More details : https://security.snyk.io/vuln/SNYK-RUBY-PDFKIT-2869795 <br>
 After reading I came down to conclusion that we can use any get parameter name and inside that use the backticks to injection our command.
 ````test
-http://10.10.XX.XX/?name=%20`parameter'
+http://10.10.XX.XX/?name=%20`parameter`
 ````
 Let's check on the website : <br> <br>
 ![image](https://user-images.githubusercontent.com/114393219/204427344-cb96f77a-a6c3-4c98-b92e-71d60626147f.png)
