@@ -4,9 +4,10 @@ The IP of this machine is 10.129.166.100 <br>
 <p align="center">
 	<img src="Images/Precious.png" alt="Logo">
 </p>
-##Enumeration
 
-###Nmap Scan
+## Enumeration
+
+### Nmap Scan
 I started my enumeration with an nmap scan of `10.129.166.100` . <br> 
 The NMAP command which I always use to scan is `nmap -T4 -A 10.129.166.100` <br>
 From the above Nmap Scan I got this output :
@@ -30,5 +31,10 @@ No exact OS matches for host (If you know what OS is running on it, see https://
 Nmap done: 1 IP address (1 host up) scanned in 75.33 seconds
 
 ```
-As always most of the time only two ports were open i.e. `22` and `80`
+As a result we got two ports open i.e. `22` and `80` and port `80` redirect us to `precious.htb`
 <br>
+Let's quickly add that in `/etc/hosts` file
+````text
+#HTB
+10.129.166.100	precious.htb
+````
