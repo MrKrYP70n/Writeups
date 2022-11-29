@@ -49,10 +49,10 @@ Let's look at functionality of the website.<br>
 First I spawned the python http server using command `python3 -m http.server 80` on attacker machine
 Then Input `IP` of our attacker/kali machine on the `precious.htb` site <br> <br>
 ![image](https://user-images.githubusercontent.com/114393219/204420631-829ff6d2-7cbd-4fbb-bcde-26f86953c8b1.png)<br> <br>
-And it's converted the webpage into PDF as expected, let's download the PDF .<br> <br>
+And it converted the webpage into PDF as expected, let's download the PDF .<br> <br>
 ![image](https://user-images.githubusercontent.com/114393219/204422059-d4c0fae4-a12d-4354-8386-cc04127344af.png)
 
-Let's analyze the pdf using `Exiftool`
+Now analyze the pdf using `Exiftool`
 <br>
 ````text 
 └─# exiftool daxl8od9nu3vj1qadzpgpgnnegxe7d6k.pdf 
