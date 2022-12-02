@@ -2,10 +2,9 @@
 
 Hackthebox released a new machine called precious. On this machine, first we got the web service which converts the web-page to a PDF, which is vulnerable to command injection. Using that, get the rev shell, and for privilege escalation, use code execution through yaml deserialization attack. <br>
 
-The IP of this machine is 10.129.166.100 <br>
-<p align="center">
-	<img src="Images/Precious.png" alt="Logo">
-</p>
+The IP of this machine is 10.129.166.100 <br><br>
+
+![Precious](https://user-images.githubusercontent.com/114393219/205229632-e0e4ef6f-c5e8-41a9-bff4-e608c7dbded5.png)
 
 # Enumeration
 
