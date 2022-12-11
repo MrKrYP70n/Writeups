@@ -154,3 +154,4 @@ Just ``sudo /bin/sh`` and now you are root !!
 
 Thank you for reading :) ! Have a nice day !
 
+And If you are having any doubt you can contact me via discord .
