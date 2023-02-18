@@ -43,7 +43,7 @@ In the Output I got new subdomain ``image.haxtables.htb`` & updated my  ``/etc/h
 ![image](https://user-images.githubusercontent.com/114393219/219800693-aa872ecc-c559-4a9e-8b77-3dcfe55edb18.png)
 
 <br><br>
-However, when trying to access said subdomain, we get a redirect to an ``HTTP 403 (Forbidden)`` status.
+However, when trying to access that subdomain, we get a redirect to an ``HTTP 403 (Forbidden)`` status.
 
 ![image](https://user-images.githubusercontent.com/114393219/219801079-2792bc4d-ec10-43ff-9621-abb8468e3cbc.png)
 
@@ -61,7 +61,7 @@ When accessing the conversion page, we notice the presence of a panel in which w
 ![image](https://user-images.githubusercontent.com/114393219/219803811-dccad7f4-a7c8-4fc0-a92c-3d3398fe8025.png)
 
 <br>
-Now open Burp Suite and intercept this request . If we intercept the request,, we can see that it is directed to the handler route, in which three parameters are sent: ``action``, ``data`` and ``uri_path`` . These parameters turn out to be crucial as we will use them later to create a reverse shell.
+Now open Burp Suite and intercept this request . If we intercept the request,, we can see that it is directed to the handler route, in which three parameters are sent:  ``action`` , ``data`` and ``uri_path`` . These parameters turn out to be crucial as we will use them later to create a reverse shell.
 
 ![image](https://user-images.githubusercontent.com/114393219/219804366-c2e64801-52be-4631-a4e7-82be2eeb53d1.png)
 
@@ -210,7 +210,8 @@ Connection: close
 {"action":"str2hex","data":"lol","uri_path":"whatever@image.haxtables.htb/actions/action_handler.php?page=php://filter/convert.iconv.UTF8.CSISO2022KR|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM921................................................................................|convert.iconv.UTF8.UTF7|convert.base64-decode/resource=php://temp"}
 ````
 <br>
-Our request has been successfully executed and now our rev-shell file ``haha`` is on the server 
+Our request has been successfully executed and now our rev-shell payload ``haha`` is on the server 
+
 ![image](https://user-images.githubusercontent.com/114393219/219821774-b260bce8-9694-4616-a5d1-7f787cab6269.png)
 
 ## Reverse Shell
@@ -265,5 +266,5 @@ Now you are just one step away  😁 !!
 Just use ``/bin/bash -p`` & BOOM !!!!! You are root now !
 ![image](https://user-images.githubusercontent.com/114393219/219827083-deefeaf2-a603-4480-b054-184ddcb0e32a.png)
 
-Thankyou :) \n 
+Thankyou :)<br><br>
 If you are having any problem , you can ask me on discord 
