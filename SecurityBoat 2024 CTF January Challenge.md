@@ -32,7 +32,8 @@ if(isset($_REQUEST['cmd'])){
 10.   And Boom ! , We got command execution .
 <img width="402" alt="image" src="https://github.com/MrKrYP70n/Writeups/assets/114393219/1f2e6305-d6d5-495d-b36b-3548b2cd0132">
 
-11.   <img width="466" alt="image" src="https://github.com/MrKrYP70n/Writeups/assets/114393219/2eec3234-6479-4a66-add6-4df882c6748d">
+<br><br>
+<img width="466" alt="image" src="https://github.com/MrKrYP70n/Writeups/assets/114393219/2eec3234-6479-4a66-add6-4df882c6748d">
 
 12.  ````{Unrestr!cted_F!le_Upload_!s_Fun} ````
 
